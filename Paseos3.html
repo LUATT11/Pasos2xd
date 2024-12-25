@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Page</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    setInterval(function() {
+      if (localStorage.getItem("Verificacion3") === "true") {
+       localStorage.setItem("Paso3", "true");
+        window.location.href = "index.html";
+      }
+    }, 1);
+  </script>
+
+</body>
+</html>
